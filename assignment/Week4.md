@@ -138,27 +138,27 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 
 ## 🧩 문제 3
 
-문제 링크: [DATETIME에서 DATE로 형 변환](https://school.programmers.co.kr/learn/courses/30/lessons/59414)
+문제 링크: [이름에 el이 들어가는 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59047)
 
 풀이 과정:
 
 ```
-- 변환 전 데이터 타입:
-- 변환 후 출력 형식:
-- 사용한 함수:
+- 찾으려는 문자열 패턴:
+- 대소문자를 처리한 방식:
+- 정렬 기준:
 ```
 
 <!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
 
 ## 🧩 문제 4
 
-문제 링크: [루시와 엘라 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59046)
+문제 링크: [카테고리 별 상품 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/131529)
 
 풀이 과정:
 
 ```
-- 필터링한 이름 목록:
-- IN을 사용한 이유:
+- 추출한 문자열 범위:
+- 그룹화 기준:
 - 정렬 기준:
 ```
 

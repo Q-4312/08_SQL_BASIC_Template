@@ -6,15 +6,15 @@
 
 | 문제 | 플랫폼 | 문제명 | 주제 | 난이도 | 링크 |
 | --- | --- | --- | --- | --- | --- |
-| 문제 1 | 프로그래머스 | 모든 레코드 조회하기 | `SELECT`, 전체 컬럼 조회 | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/59034 |
-| 문제 2 | 프로그래머스 | 동물의 아이디와 이름 | `SELECT`, 특정 컬럼 조회, `ORDER BY` | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/59403 |
+| 문제 1 | 자체 제작 | 산업별 데이터 컬럼 상상하기 | 데이터 구조, 컬럼 이해 | 쉬움 | - |
+| 문제 2 | 자체 제작 | SQL이 필요한 이유 정리하기 | SQL 학습 목적 정리 | 쉬움 | - |
 
 ## 2주차
 
 | 문제 | 플랫폼 | 문제명 | 주제 | 난이도 | 링크 |
 | --- | --- | --- | --- | --- | --- |
-| 문제 1 | 프로그래머스 | 아픈 동물 찾기 | `WHERE`, 조건 필터링 | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/59036 |
-| 문제 2 | 프로그래머스 | 어린 동물 찾기 | `WHERE`, 부정 조건, `ORDER BY` | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/59037 |
+| 문제 1 | 프로그래머스 | 모든 레코드 조회하기 | `SELECT`, `FROM`, 전체 컬럼 조회 | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/59034 |
+| 문제 2 | 프로그래머스 | 아픈 동물 찾기 | `WHERE`, 조건 필터링 | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/59036 |
 
 ## 3주차
 
@@ -30,8 +30,8 @@
 | --- | --- | --- | --- | --- | --- |
 | 문제 1 | 프로그래머스 | 특정 옵션이 포함된 자동차 리스트 구하기 | `LIKE`, 문자열 조건, 정렬 | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/157343 |
 | 문제 2 | 프로그래머스 | 강원도에 위치한 생산공장 목록 출력하기 | 문자열 조건, `SELECT`, `ORDER BY` | 쉬움 | https://school.programmers.co.kr/learn/courses/30/lessons/131112 |
-| 문제 3 | 프로그래머스 | DATETIME에서 DATE로 형 변환 | 날짜 형식 변환, `DATE_FORMAT` | 보통 | https://school.programmers.co.kr/learn/courses/30/lessons/59414 |
-| 문제 4 | 프로그래머스 | 루시와 엘라 찾기 | `IN`, 문자열 조건, `ORDER BY` | 보통 | https://school.programmers.co.kr/learn/courses/30/lessons/59046 |
+| 문제 3 | 프로그래머스 | 이름에 el이 들어가는 동물 찾기 | `LIKE`, 대소문자 변환, 문자열 조건 | 보통 | https://school.programmers.co.kr/learn/courses/30/lessons/59047 |
+| 문제 4 | 프로그래머스 | 카테고리 별 상품 개수 구하기 | 문자열 추출, `COUNT`, `GROUP BY` | 보통 | https://school.programmers.co.kr/learn/courses/30/lessons/131529 |
 
 ## 5주차
 

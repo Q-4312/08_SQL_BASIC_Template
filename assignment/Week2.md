@@ -101,14 +101,13 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 
 ## 🧩 문제 1
 
-문제 링크: [아픈 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59036)
+문제 링크: [모든 레코드 조회하기](https://school.programmers.co.kr/learn/courses/30/lessons/59034)
 
 풀이 과정:
 
 ```
-- 문제에서 요구한 조건:
-- WHERE 절로 옮긴 방식:
-- 정렬 조건이 있다면 사용한 기준:
+- 테이블에서 확인한 컬럼:
+- SELECT와 FROM을 작성한 방식:
 - 새로 배운 점:
 ```
 
@@ -116,13 +115,13 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 
 ## 🧩 문제 2
 
-문제 링크: [어린 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59037)
+문제 링크: [아픈 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59036)
 
 풀이 과정:
 
 ```
-- 사용한 조건:
-- 조건을 조합한 방식:
+- 문제에서 요구한 조건:
+- WHERE 절로 옮긴 방식:
 - 정렬 기준이 있다면 사용한 기준:
 - 새로 배운 점:
 ```
