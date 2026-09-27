@@ -105,11 +105,8 @@ WHERE
 
 # 2️⃣ 수행 인증란
 
-아래 중 하나 이상을 첨부해주세요.
+<img width="301" height="608" alt="image" src="https://github.com/user-attachments/assets/c5bcb83c-cb28-4179-ac3e-697cacfd4005" />
 
-- 강의 수강 화면 캡처
-- 문제 풀이 정답 화면 캡처
-- SQL 실행 결과 화면 캡처
 
 ---
 
