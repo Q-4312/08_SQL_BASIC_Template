@@ -112,6 +112,7 @@ ON tp.trainer_id = t.id
 
 - 강의 수강 화면 캡처
 
+<img width="306" height="494" alt="image" src="https://github.com/user-attachments/assets/33844802-3d18-45f3-97a6-0ef5981fdefa" />
 
 
 ---
