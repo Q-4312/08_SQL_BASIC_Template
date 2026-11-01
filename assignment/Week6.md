@@ -68,24 +68,39 @@ JOIN은 여러 테이블을 연결해서 분석 질문에 답하기 위해 반�
 ## 01.
 
 ```
-개념 이름:
-개념 설명:
+개념 이름: JOIN
+개념 설명: 서로 다른 테이블에서 공통되는 key를 찾아 우측에 붙인다. 여러 테이블 조인 가능. 정규화 과정에서 중복을 최소화하게 데이터를 구조화하기 위해 필요한 과정.
 예시 쿼리:
+SELECT
+  A.col1,
+  A.col2,
+  B.col11,
+  B.col12
+FROM table1 AS A
+LEFT JOIN table2 AS B
+ON A.key = B.key
+(CROSS JOIN 제외 다 ON이 필요)
 ```
 
 ## 02.
 
 ```
-개념 이름:
-개념 설명:
+개념 이름: INNER JOIN, LEFT JOIN
+개념 설명: 프로그래밍 R의 JOIN과 동일한 개념 / 작동, ON은 JOIN KEY를 기입하는 쿼리
 예시 쿼리:
+SELECT
+  tp.*,
+  t.*
+FROM basic.trainer_pokemon AS tp
+LEFT JOIN basic.trainer AS t
+ON tp.trainer_id = t.id
 ```
 
 ## (선택) 03.
 
 ```
 개념 이름:
-개념 설명:
+개념 설명: 
 헷갈린 점:
 ```
 
@@ -96,8 +111,8 @@ JOIN은 여러 테이블을 연결해서 분석 질문에 답하기 위해 반�
 아래 중 하나 이상을 첨부해주세요.
 
 - 강의 수강 화면 캡처
-- JOIN 문제 풀이 정답 화면 캡처
-- JOIN 전후 결과 row 수를 비교한 캡처 또는 메모
+
+
 
 ---
 
@@ -109,58 +124,62 @@ JOIN은 여러 테이블을 연결해서 분석 질문에 답하기 위해 반�
 
 문제 링크: [조건에 맞는 도서와 저자 리스트 출력하기](https://school.programmers.co.kr/learn/courses/30/lessons/144854)
 
-풀이 과정:
+풀이 과정: BOOK에 AUTHOR를 조인시키고, AUTHOR_ID를 key로 설정하고, 연도-월-일 타입으로 되어있는 DATE를 오름차순으로 정렬
 
 ```
-- 사용한 테이블:
-- JOIN key:
-- 날짜를 출력한 형식:
+- 사용한 테이블: BOOK, AUTHOR
+- JOIN key: AUTHOR_ID
+- 날짜를 출력한 형식: BOOK.PUBLISHED_DATE DESC;
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="1773" height="618" alt="image" src="https://github.com/user-attachments/assets/decc572f-9674-4c22-9448-79e805233533" />
+
 
 ## 🧩 문제 2
 
 문제 링크: [상품 별 오프라인 매출 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/131533)
 
-풀이 과정:
+풀이 과정: P와 O를 product_id를 기준으로 inner join시키고, 매출액인 가격 * 수량으로 정렬
 
 ```
-- 연결한 테이블:
-- JOIN key:
-- 집계한 값:
+- 연결한 테이블: PRODUCT AS P, OFFLINE_SALE AS O
+- JOIN key: PRODUCT_ID
+- 집계한 값: P.PRICE * O.SALES_AMOUNT
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="1535" height="714" alt="image" src="https://github.com/user-attachments/assets/e0bbbd19-b584-4265-847d-6ba0b781a5f2" />
+
 
 ## 🧩 문제 3
 
 문제 링크: [없어진 기록 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59042)
 
-풀이 과정:
+풀이 과정: AO에 AI를 join시켜서 NULL이 나오는 행의 ANIMAL_ID와 NAME을 찾기
 
 ```
-- 기준이 되는 왼쪽 테이블:
-- LEFT JOIN이 필요한 이유:
-- NULL이 발생하는 경우:
+- 기준이 되는 왼쪽 테이블: ANIMAL_OUTS AS AO
+- LEFT JOIN이 필요한 이유: AO에는 입양 간 기록이 있지만 ANIMAL_INS AS AI에는 없는 정보를 찾기 위함이라
+- NULL이 발생하는 경우: AO에는 있지만, AI에는 없을 때 -> 유실된 데이터(목표데이터)
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="1885" height="667" alt="image" src="https://github.com/user-attachments/assets/9d6ae5c6-d661-49aa-960d-ef476494b012" />
+
 
 ## 🧩 문제 4
 
 문제 링크: [있었는데요 없었습니다](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
 
-풀이 과정:
+풀이 과정: AI에AO를 join시켜 AI의 날짜와 AO의 날짜를 비교해서 정렬
 
 ```
-- 사용한 테이블:
-- JOIN key:
-- 비교한 날짜 컬럼:
-- 정렬 기준:
+- 사용한 테이블: ANIMAL_OUTS AS AO, ANIMAL_INS AS AI
+- JOIN key: ANIMAL_ID
+- 비교한 날짜 컬럼: AI.DATETIME > AO.DATETIME
+- 정렬 기준: AI.DATETIME ASC;
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="1899" height="632" alt="image" src="https://github.com/user-attachments/assets/4482d125-c9a4-4abe-bb1b-329319263af8" />
+
 
 ---
 
@@ -176,9 +195,9 @@ JOIN 개념이 헷갈린다면 아래 자료를 함께 참고해도 좋습니다
 # 5️⃣ 이번 주 회고
 
 ```
-1. INNER JOIN과 LEFT JOIN의 차이를 어떻게 이해했는지:
-2. JOIN 문제를 풀 때 가장 먼저 확인해야 할 것:
-3. JOIN 결과가 예상과 달랐던 경험이 있다면:
+1. INNER JOIN과 LEFT JOIN의 차이를 어떻게 이해했는지: INNER는 교집합, LEFT는 왼쪽 집합 그대로(차집합 X)
+2. JOIN 문제를 풀 때 가장 먼저 확인해야 할 것: JOIN KEY
+3. JOIN 결과가 예상과 달랐던 경험이 있다면: 기준으로 잡을 TABLE 설정이 예상과는 달리 되어 key를 찾는 것도 중요하지만 기준점을 잘 잡아야겠다는 생각을 했습니다.
 ```
 
 수고하셨습니다!
